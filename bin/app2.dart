@@ -1,3 +1,4 @@
+import 'package:app2/models/enseignant.dart';
 import 'package:app2/models/etudiant.dart';
 import 'package:app2/services/api_services.dart';
 
@@ -136,7 +137,15 @@ for (var e in value) {
   print("${e["name"]} ${e["username"]} ${e["email"]}");
 }
 
+Enseignant en = Enseignant(
+matiere: "IA", 
+prenom: "Moustapha", 
+nom: "DER",
+matricule: 3900,
+);
 
+print ("|-" * 100);
+print("${en.matricule} ${en.nom} ${en.prenom} ${en.matiere} ");
 
 
 }
